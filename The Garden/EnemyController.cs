@@ -14,7 +14,7 @@ public class EnemyController : MonoBehaviour
     public static bool chasing = false;
     public Animator animator;
     
-    //This script is controlls some of the AI of the enemy.
+    //This script controlls the enemy AI.
     void Start()
     {
         //Looks for player game elements
