@@ -26,19 +26,19 @@ public class CameraFocusScript : MonoBehaviour
         {
             case enumCameraFocus.Player:
                 desiredPosition = player.position;
-            break;
+                break;
     
             case enumCameraFocus.Enemy:
                 desiredPosition = enemy.position;
-            break;
+                break;
     
             case enumCameraFocus.Both:
                 desiredPosition = both.position;
-            break;
+                break;
     
             default:
                 // Handle an invalid value for CameraFocus
-            break;
+                break;
         }
         smoothSpeed = moveCurve.Evaluate(Vector2.Distance(new Vector2(desiredPosition.x, desiredPosition.y), new Vector2(transform.position.x, transform.position.y)) / 1000f);
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, new Vector3(desiredPosition.x, desiredPosition.y, -10f), smoothSpeed * 10f);
