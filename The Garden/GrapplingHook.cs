@@ -1,4 +1,5 @@
-﻿using System.Collections;
+//Script responsible for the grappling hook tool and the physics behind it.
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,7 +13,6 @@ public class GrapplingHook : MonoBehaviour
     private Vector3 grapplePoint;
     private SpringJoint joint;
 
-    //Script responsible for the grappling hook tool and the physics behind it.
     void Awake()
     {
         lineRenderer = GetComponent<LineRenderer>();
