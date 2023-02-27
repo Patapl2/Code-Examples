@@ -1,4 +1,4 @@
-//this script is a custom audio manager system, making it easier to trigger specific audio clips in other scripts.
+//This script is a custom audio manager system, making it easier to trigger specific audio clips in other scripts.
 using UnityEngine;
 using UnityEngine.Audio;
 using System;
