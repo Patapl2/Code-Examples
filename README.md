@@ -1,5 +1,4 @@
 Hello there! In this repository you can find some of the C# scripts that I have created for my projects!
-
 All of the example scripts are created by me for either my own projects or univerity project.
 
 ### [Friday Night Funkin' Reimagined](https://github.com/Patapl2/Code-Examples/tree/main/FridayNightFunkin'%20Reimagined)
