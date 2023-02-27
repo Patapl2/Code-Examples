@@ -1,3 +1,4 @@
+//this script is a custom audio manager system, making it easier to trigger specific audio clips in other scripts.
 using UnityEngine;
 using UnityEngine.Audio;
 using System;
@@ -8,7 +9,6 @@ public class AudioManager : MonoBehaviour
     public SoundClass[] sounds;
     public static AudioManager Instance;
 
-    //this script is a custom audio manager system, making it easier to trigger specific audio clips in other scripts.
     void Awake()
     {
         //Allows for each audio clip elements be edited, such as the volume and the pitch.

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+//Script responsible for the grappling hook tool and the physics behind it.
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,14 +9,13 @@ public class GrapplingHook : MonoBehaviour
     public LayerMask whatIsGrappleable;
     public Transform gunTip, camera, player;
     public float maxDistance = 100f;
-    private LineRenderer lr;
+    private LineRenderer lineRenderer;
     private Vector3 grapplePoint;
     private SpringJoint joint;
 
-    //Script responsible for the grappling hook tool and the physics behind it.
     void Awake()
     {
-        lr = GetComponent<LineRenderer>();
+        lineRenderer = GetComponent<LineRenderer>();
         sounds = GetComponent<AudioSource>();
     }
 
@@ -59,7 +59,7 @@ public class GrapplingHook : MonoBehaviour
             joint.spring = 30f;
             joint.damper = 7f;
             joint.massScale = 4.5f;
-            lr.positionCount = 2;
+            lineRenderer.positionCount = 2;
  
             //plays the grapple sound
             sounds.Play();
@@ -69,7 +69,7 @@ public class GrapplingHook : MonoBehaviour
     //Stops the grapple
     void StopGrapple()
     {
-        lr.positionCount = 0;
+        lineRenderer.positionCount = 0;
         Destroy(joint);
     }
 
@@ -81,10 +81,8 @@ public class GrapplingHook : MonoBehaviour
         {
             return;
         }
-        lr.SetPosition(0, gunTip.position);
-        lr.SetPosition(1, grapplePoint);
-
-        
+        lineRenderer.SetPosition(0, gunTip.position);
+        lineRenderer.SetPosition(1, grapplePoint);
     }
 
     //checks if the joint exists or not

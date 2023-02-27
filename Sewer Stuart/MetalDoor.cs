@@ -1,3 +1,4 @@
+//This script is responsible for the doors, which are deviders between sections.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,8 +16,7 @@ public class MetalDoor : MonoBehaviour
     [SerializeField] private Material greenLight;
 
     [SerializeField] AudioSource SFX;
-
-    //This script is responsible for the doors, which are deviders between sections.
+    
     void Start()
     {
         Vector3 pivot = new Vector3(0, 0, transform.position.z);
