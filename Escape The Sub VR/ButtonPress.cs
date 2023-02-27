@@ -9,10 +9,10 @@ public class ButtonPress : MonoBehaviour
 {
     public enum ButtonColor
     {
-        Green,//1
-        Red,//2
-        Orange,//3
-        Blue,//4
+        Green =1,
+        Red =2,
+        Orange =3,
+        Blue =4,
     }
     public UnityEvent onPressed, onReleased;
     public ButtonColor buttonColor;
@@ -57,32 +57,13 @@ public class ButtonPress : MonoBehaviour
     private void Pressed()
     {
         _isPressed = true;
-        onPressed.Invoke();
-
-        if (buttonColor == ButtonColor.Green)
-        {
-            PuzzleLogic.playerCode += 1;
-        }
-
-        if (buttonColor == ButtonColor.Red)
-        {
-            PuzzleLogic.playerCode += 2;
-        }
-
-        if (buttonColor == ButtonColor.Orange)
-        {
-            PuzzleLogic.playerCode += 3;
-        }
-
-        if (buttonColor == ButtonColor.Blue)
-        {
-            PuzzleLogic.playerCode += 4;
-        }
+        onPressed?.Invoke();
+        PuzzleLogic.playerCode += (int)buttonColor;
         PuzzleLogic.totalDigits += 1;
     }
-        private void Released()
-        {
-            _isPressed = false;
-            onReleased.Invoke();
-        }
+    private void Released()
+    {
+        _isPressed = false;
+        onReleased.Invoke();
     }
+}
