@@ -2,7 +2,7 @@ Hello there! In this repository you can find some of the C# scripts that I have 
 
 All of the example scripts are created by me for either my own projects or univerity project.
 
-### [Friday Night Funkin' Reimagined] 
+### [Friday Night Funkin' Reimagined](https://github.com/Patapl2/Code-Examples/tree/main/FridayNightFunkin'%20Reimagined)
 * A fan remake of the popular web rhythm game "Friday Night Funkin'" which was originally developed in the HaxeFlixel engine. This remake is built from the ground up in the Unity engine, with the original's mechanics faithfully recreated & new music and visuals added. Players must time the press of the arrow keys to match the beat of the music, in epic battles against musical foes! The game's mechanics are similar to other popular rhythm games such as Dance Dance Revolution and Guitar Hero, where the player's timing and accuracy determine their success.
 
 ### [The Garden] 
