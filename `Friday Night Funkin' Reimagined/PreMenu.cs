@@ -43,11 +43,12 @@ public class PreMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return))
         {
             StartCoroutine(NextImage());
+            if (Playable)
+            {
+                StartCoroutine(Continue2());
+            }
         }
-        if (Input.GetKeyDown(KeyCode.Return) && Playable)
-        {
-            StartCoroutine(Continue2());
-        }
+        
         if (SecondMenuOpened == true)
         {
             MenuItems2[2].SetActive(true);
