@@ -29,7 +29,8 @@ public class BezierFollow : MonoBehaviour
         }
     }
 
-    //This section uses a formula which looks for a path placed on the Unity scene made out of checkpoints and follows the path in a smooth manner, changing the position of whatever gameobject refrenced to.
+    //This section uses a formula which looks for a path placed on the Unity scene made out of checkpoints and follows the path in a smooth manner,
+    //changing the position of whatever gameobject refrenced to.
     private IEnumerator GoByTheRoute(int routeNum)
     {
         coroutineAllowed = false;
