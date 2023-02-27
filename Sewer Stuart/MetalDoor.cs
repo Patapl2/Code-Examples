@@ -1,4 +1,4 @@
-//This script is responsible for the doors, which are deviders between sections.
+//This script is responsible for the doors, which are dividers between sections.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
