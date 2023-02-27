@@ -1,4 +1,5 @@
-//this script is responsible for spawning different pickups, it ensures that there are no pickups on top of eachother as well as bounds the area that they are spawned in to a circle to match the level layout using a maths formula
+//This script is responsible for spawning different pickups, it ensures that there are no pickups on top of eachother as well as bounds the area that they are
+//spawned in to a circle to match the level layout using a maths formula.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -52,7 +53,7 @@ public class PickupSpawner : MonoBehaviour
         }
     }
 
-    int Choose(float[] probs) 
+    private int Choose(float[] probs) 
     {
         float total = 0;
 
