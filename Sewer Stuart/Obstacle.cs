@@ -1,3 +1,4 @@
+//This scripts handles the obsticles, controlling different gameplay elements.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,7 +27,6 @@ public class Obstacle : MonoBehaviour
     [HideInInspector] public RatController player;
     CameraShake cameraShake;
 
-    //This scripts handles the obsticles, controlling different gameplay elements.
     private void Start()
     {
         Initialization();
