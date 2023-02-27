@@ -1,3 +1,4 @@
+//This script handles the buttons in VR, The player has to push them with a motion of their hands.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,7 +23,6 @@ public class ButtonPress : MonoBehaviour
     [SerializeField] private float threshold = .1f;
     [SerializeField] private float deadZone = .025f;
 
-    //This script handles the buttons in VR, The player has to push them with a motion of their hands
     void Start()
     {
         _startPos = transform.localPosition;
