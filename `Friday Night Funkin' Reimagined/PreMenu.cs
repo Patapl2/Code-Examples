@@ -1,3 +1,4 @@
+//Handles the functions responsible for the intro sequences.
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,10 +19,8 @@ public class PreMenu : MonoBehaviour
     public GameObject ConfSound;
     public Image image;
 
-    
     void Start()
     {
-        //handles the functions responsible for the intro sequences.
         Music.SetActive(false);
         ConfSound.SetActive(false);
         for (int i = 0; i < MenuItems.Length; i++)
