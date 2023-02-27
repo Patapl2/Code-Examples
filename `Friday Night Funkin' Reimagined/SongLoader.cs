@@ -70,35 +70,35 @@ public class SongLoader : MonoBehaviour
                         line = reader.ReadLine();
                         values = line.Split(',');
 
-                        if (values[0] == "E")
+                        switch (values[0])
                         {
+                        case "E":
                             CameraFocus[i] = CameraFocusScript.enumCameraFocus.Enemy;
-                        }
-                        else if (values[0] == "B")
-                        {
+                            break;
+                        case "B":
                             CameraFocus[i] = CameraFocusScript.enumCameraFocus.Both;
-                        }
-                        else
-                        {
+                            break;
+                        default:
                             CameraFocus[i] = CameraFocusScript.enumCameraFocus.Player;
+                            break;
                         }
 
-                        if (values[2] == "1")
+                        switch (values[2])
                         {
+                        case "1":
                             playerArrowDir[i] = 1; // left
-                        }
-                        else if (values[3] == "1")
-                        {
+                            break;
+                        case "2":
                             playerArrowDir[i] = 2; // down
-                        }
-                        else if (values[4] == "1")
-                        {
+                            break;
+                        case "3":
                             playerArrowDir[i] = 3; // up
-                        }
-                        else if (values[5] == "1")
-                        {
+                            break;
+                        case "4":
                             playerArrowDir[i] = 4; // right
+                            break;
                         }
+                        
                         if (values[6] != "")
                         {
                             arrowHoldPlayer[i] = Int32.Parse(values[6]);
@@ -106,21 +106,20 @@ public class SongLoader : MonoBehaviour
                         playerSpawnBeat[i] = Int32.Parse(values[1]);
                         arrowSpawnedPlayer[i] = false;
 
-                        if (values[9] == "1")
+                        switch (values[9])
                         {
+                        case "1":
                             enemyArrowDir[i] = 1; // left
-                        }
-                        else if (values[10] == "1")
-                        {
+                            break;
+                        case "2":
                             enemyArrowDir[i] = 2; // down
-                        }
-                        else if (values[11] == "1")
-                        {
+                            break;
+                        case "3":
                             enemyArrowDir[i] = 3; // up
-                        }
-                        else if (values[12] == "1")
-                        {
+                            break;
+                        case "4":
                             enemyArrowDir[i] = 4; // right
+                            break;
                         }
                         if (values[13] != "")
                         {
