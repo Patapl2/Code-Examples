@@ -6,6 +6,7 @@ All of the example scripts are created by me for either my own projects or unive
 
 ### [Sewer Stuart](https://github.com/Patapl2/Code-Examples/tree/main/Sewer%20Stuart)
 * An endless runner with procedural tunnels and an alarming amount of cheese. Run from the impending wave of water as Stuart, a rat who just want to peacefully eat his cheese! There will be a lot of obstacles in the way, but luckily there are a lot of magical powerups and discarded treasures to help Stuart go on!
+######[Gameplay](https://www.youtube.com/watch?v=JPcEHbEFWtg)
 
 ### [Escape the Sub VR](https://github.com/Patapl2/Code-Examples/tree/main/Escape%20The%20Sub%20VR)
 * A virtual reality escape-room-like experience where the player takes on the role of a secret agent stranded on an abandoned submarine that is stuck at the bottom of the ocean. The game features a variety of puzzles & obstacles to overcome using unique interaction methods only possible in VR. Oh, and don't be alarmed by the noises you hear. It's probably just the pet chicken the bad guys left behind.
