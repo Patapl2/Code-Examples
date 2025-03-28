@@ -3,7 +3,7 @@ All of the example scripts are created by me for either my own projects or unive
 
 ### [Friday Night Funkin' Reimagined](https://github.com/Patapl2/Code-Examples/tree/main/%60Friday%20Night%20Funkin'%20Reimagined)
 * A fan remake of the popular web rhythm game "Friday Night Funkin'" which was originally developed in the HaxeFlixel engine. This remake is built from the ground up in the Unity engine, with the original's mechanics faithfully recreated & new music and visuals added. Players must time the press of the arrow keys to match the beat of the music, in epic battles against musical foes! The game's mechanics are similar to other popular rhythm games such as Dance Dance Revolution and Guitar Hero, where the player's timing and accuracy determine their success.
-* [Play Here]([https://twitter.com/PATA_PL/media](https://www.newgrounds.com/portal/view/895654)) Over 70,000 people have tried it!
+* [Play Here](https://twitter.com/PATA_PL/media](https://www.newgrounds.com/portal/view/895654) Over 70,000 people have tried it!
 
 ### [Sewer Stuart](https://github.com/Patapl2/Code-Examples/tree/main/Sewer%20Stuart)
 * An endless runner with procedural tunnels and an alarming amount of cheese. Run from the impending wave of water as Stuart, a rat who wants to eat his cheese peacefully! There will be a lot of obstacles in the way, but luckily there are a lot of magical powerups and discarded treasures to help Stuart go on!
